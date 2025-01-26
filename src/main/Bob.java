@@ -82,7 +82,7 @@ public class Bob {
     // Graph erstellen
     public Graph graphExample() {
         Vertex[] V = new Vertex[13];
-        
+
         // Vertecies erstellen
         for (int i = 0; i < V.length; i++) {
             V[i] = new Vertex("V" + i);
@@ -94,27 +94,27 @@ public class Bob {
             g.addVertex(v);
         }
 
-        g.addEdge(new Edge(V[0], V[1], 0));
-        g.addEdge(new Edge(V[0], V[4], 0));
-        g.addEdge(new Edge(V[0], V[5], 0));
-        g.addEdge(new Edge(V[4], V[5], 0));
-        g.addEdge(new Edge(V[4], V[9], 0));
-        g.addEdge(new Edge(V[5], V[9], 0));
-        g.addEdge(new Edge(V[9], V[10], 0));
-        g.addEdge(new Edge(V[0], V[10], 0));
-        g.addEdge(new Edge(V[1], V[6], 0));
-        g.addEdge(new Edge(V[10], V[6], 0));
-        g.addEdge(new Edge(V[10], V[11], 0));
-        g.addEdge(new Edge(V[6], V[11], 0));
-        g.addEdge(new Edge(V[6], V[7], 0));
-        g.addEdge(new Edge(V[1], V[2], 0));
-        g.addEdge(new Edge(V[2], V[3], 0));
-        g.addEdge(new Edge(V[2], V[7], 0));
-        g.addEdge(new Edge(V[7], V[8], 0));
-        g.addEdge(new Edge(V[3], V[8], 0));
-        g.addEdge(new Edge(V[8], V[11], 0));
-        g.addEdge(new Edge(V[11], V[12], 0));
-        g.addEdge(new Edge(V[12], V[7], 0));
+        g.addEdge(new Edge(V[0], V[1], 5));
+        g.addEdge(new Edge(V[0], V[4], 10));
+        g.addEdge(new Edge(V[0], V[5], 4));
+        g.addEdge(new Edge(V[4], V[5], 11));
+        g.addEdge(new Edge(V[4], V[9], 6));
+        g.addEdge(new Edge(V[5], V[9], 2));
+        g.addEdge(new Edge(V[9], V[10], 8));
+        g.addEdge(new Edge(V[0], V[10], 8));
+        g.addEdge(new Edge(V[1], V[6], 7));
+        g.addEdge(new Edge(V[10], V[6], 15));
+        g.addEdge(new Edge(V[10], V[11], 8));
+        g.addEdge(new Edge(V[6], V[11], 6));
+        g.addEdge(new Edge(V[6], V[7], 3));
+        g.addEdge(new Edge(V[1], V[2], 9));
+        g.addEdge(new Edge(V[2], V[3], 8));
+        g.addEdge(new Edge(V[2], V[7], 2));
+        g.addEdge(new Edge(V[7], V[8], 1));
+        g.addEdge(new Edge(V[3], V[8], 16));
+        g.addEdge(new Edge(V[8], V[11], 5));
+        g.addEdge(new Edge(V[11], V[12], 10));
+        g.addEdge(new Edge(V[12], V[7], 12));
 
         return g;
     }
